@@ -1,4 +1,4 @@
-# quill-image-extend-module 
+# quill-image-paste-module 
 vue-quill-editor的增强模块，
 
 功能：
@@ -18,12 +18,12 @@ vue-quill-editor的增强模块，
 
 ## Install
 ```bash
-npm install quill-image-extend-module --save-dev
+npm install quill-image-paste-module --save-dev
 ```
 ## use
 ```ecmascript 6
   import {quillEditor, Quill} from 'vue-quill-editor'
-  import {container, ImageExtend, QuillWatch} from 'quill-image-extend-module'
+  import {container, ImageExtend, QuillWatch} from 'quill-image-paste-module'
 
   Quill.register('modules/ImageExtend', ImageExtend)
 ```
@@ -41,7 +41,7 @@ npm install quill-image-extend-module --save-dev
 </template>
 <script>
   import {quillEditor, Quill} from 'vue-quill-editor'
-  import {container, ImageExtend, QuillWatch} from 'quill-image-extend-module'
+  import {container, ImageExtend, QuillWatch} from 'quill-image-paste-module'
 
   Quill.register('modules/ImageExtend', ImageExtend)
   export default {
@@ -76,7 +76,7 @@ npm install quill-image-extend-module --save-dev
 </script>
 
 ```
-## quill-image-extend-module 的所有可配置项
+## quill-image-paste-module 的所有可配置项
 ```ecmascript 6
  editorOption: {
                      modules: {
@@ -153,7 +153,7 @@ result: {
 </template>
 <script>
   import {quillEditor, Quill} from 'vue-quill-editor'
-  import {container, ImageExtend, QuillWatch} from 'quill-image-extend-module'
+  import {container, ImageExtend, QuillWatch} from 'quill-image-paste-module'
   import ImageResize from 'quill-image-resize-module'
 
   Quill.register('modules/ImageExtend', ImageExtend)
