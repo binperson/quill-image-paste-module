@@ -1,0 +1,1 @@
+# quill-image-paste-module
