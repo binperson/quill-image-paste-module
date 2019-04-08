@@ -1,0 +1,17 @@
+{
+  "name": "quill-image-paste-module",
+  "version": "1.0.0",
+  "description": "quill-image-paste-module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "quill",
+    "image",
+    "paste",
+    "module"
+  ],
+  "author": "binperson",
+  "license": "ISC"
+}
