@@ -210,7 +210,8 @@ export class ImageExtend {
         const self = this
         self.quill.blur()
         let length = (this.quill.getSelection() || {}).index || this.quill.getLength()
-        self.quill.insertEmbed(length, 'image', self.imgURL, 'user')
+        self.quill.insertEmbed(length, 'image', self.imgURL)
+        // self.quill.insertEmbed(length, 'image', self.imgURL, 'user')
         self.quill.setSelection(length + 1)
     }
 }
