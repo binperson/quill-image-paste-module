@@ -44,8 +44,18 @@ export class ImageExtend {
         let items, item, types
 
         if (clipboardData) {
+            if (userAgent.indexOf('Firefox') > -1) {
+              const selection = self.quill.getSelection();
+              if (selection) {
+                return
+                // we must be in a browser that supports pasting (like Firefox)
+                // so it has already been placed into the editor
+              } else {
+                // otherwise we wait until after the paste when this.quill.getSelection()
+                // will return a valid index
+              }
+            }
             items = clipboardData.items;
-
             if (!items) {
                 return;
             }
