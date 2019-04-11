@@ -150,7 +150,7 @@ export class ImageExtend {
         }
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
-                if (xhr.status === '200') {
+                if (xhr.status === 200) {
                     //success
                     let res = JSON.parse(xhr.responseText)
                     self.imgURL = config.response(res)
