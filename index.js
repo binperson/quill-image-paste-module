@@ -48,6 +48,17 @@ export class ImageExtend {
      */
     pasteHandle(e) {
         // e.preventDefault()
+        if (userAgent.indexOf('Firefox') > -1) {
+        const selection = self.quill.getSelection();
+            if (selection) {
+                return
+                // we must be in a browser that supports pasting (like Firefox)
+                // so it has already been placed into the editor
+            } else {
+                // otherwise we wait until after the paste when this.quill.getSelection()
+                // will return a valid index
+            }
+        }
         QuillWatch.emit(this.quill.id, 0)
         let clipboardData = e.clipboardData
         let i = 0

@@ -1,6 +1,6 @@
 {
   "name": "quill-image-paste-module",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "quill-image-paste-module",
   "main": "index.js",
   "scripts": {
